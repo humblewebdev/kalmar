@@ -1,0 +1,18 @@
+
+timeStamp: {time()}
+Message: SQLSTATE[HY000] [2005] Unknown MySQL server host 'HOSTNAME' (0)
+Code: 2005
+File: /usr/local/zend/apache2/htdocs/Thomas_Veilleux_Portfolio/wp-content/themes/Kalmar/plugins/classes/Product.class.php
+Line: 24
+
+timeStamp: {time()}
+Message: SQLSTATE[HY000] [2005] Unknown MySQL server host ''localhost'' (0)
+Code: 2005
+File: /usr/local/zend/apache2/htdocs/Thomas_Veilleux_Portfolio/wp-content/themes/Kalmar/plugins/classes/Product.class.php
+Line: 26
+
+timeStamp: {time()}
+Message: SQLSTATE[HY000] [2005] Unknown MySQL server host ''localhost'' (0)
+Code: 2005
+File: /usr/local/zend/apache2/htdocs/Thomas_Veilleux_Portfolio/wp-content/themes/Kalmar/plugins/classes/Product.class.php
+Line: 26

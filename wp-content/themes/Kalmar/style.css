@@ -1,0 +1,955 @@
+/*
+Theme Name: Kalmar
+Theme URI: http://www.webtegrity.com
+Description: Kalmar is a custom theme built for Kalmar
+Author: Webtegrity
+Author URI: http://www.webtegrity.com
+Version: 1
+*/
+
+/*Webtegrity
+-----------------------------------------------------------------------------
+
+
+*/
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+
+	1. Clean Base
+	2. Base Typography
+	3. Images
+	4. Links
+	5. Header
+
+*/
+
+/* 1. Create a Clean Base
+------------------------------------------------------------------------------*/
+html,body,br,hr,div,span,a,object,iframe,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,p,blockquote,q,address,small,big,cite,dfn,ins,del,i,em,b,strong,sup,sub,strike,pre,code,samp,kbd,var,tt,form,fieldset,legend,label,input,textarea,option,.nobox
+	{
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+br {
+	height: 0;
+}
+
+a {
+	border: none;
+}
+
+/* Class for clearing floats */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: auto;
+	width:100%;
+	padding: 0 20px;
+}
+
+.shadow {
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	top: -2px;
+	border-top: 0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.fancy {
+	line-height: 0.5;
+	text-align: left;
+}
+
+.fancy span {
+	display: inline-block;
+	position: relative;
+}
+
+.fancy span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	background: #515151;
+	top: 0;
+	width: 90px;
+}
+
+.fancy span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+/* 2. Define Base Typography 
+------------------------------------------------------------------------------*/
+
+/* Create the Default Headers  */
+h1,h2,h3,h4,h5,h6 {
+	color: #535353;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Create the Default Paragraphs */
+p {
+	color: #000;
+	line-height: 23px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Specific Header Settings */
+h1 {
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 10px;
+	margin-bottom: 3px;
+	color: #6d6d6d;
+	font-weight: normal;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+/* Other Typo */
+strong {
+	font-weight: bold;
+	color: red;
+}
+
+hr {
+	border: 0 #000 solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 35px;
+}
+
+/* 3. Images
+------------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+img {
+	border: 0;
+	border-style: none;
+}
+
+/* 4. Links
+------------------------------------------------------------------------------*/
+
+/* Default Link Types */
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #535353;
+	text-decoration: none;
+}
+
+a:active {
+	outline: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+/* 5. Header
+-------------------------------------------------------------------------------*/
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, .navbar-inverse .nav
+li.dropdown.active>.dropdown-toggle, .navbar-inverse .nav    
+li.dropdown.open.active>.dropdown-toggle,
+.navbar, .navbar-inverse .navbar-inner {	
+    filter:none;
+    background-image: none;
+}
+
+@media only screen and (min-width: 1280px) {
+	.commercial-bkgd {
+  background: url(images/commercial-x-large.jpg) no-repeat center -200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+
+	.military-bkgd {
+  background: url(images/military-x-large.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	header {
+		position: relative;
+		width: 100%;
+	    height: 100%; 
+	}
+	
+	.nav.navbar-nav{
+		padding: 40px 20px;
+	}
+	
+}
+
+@media only screen and (min-width: 980px) and (max-width:1280px){
+	.commercial-bkgd {
+  background: url(images/commercial-large.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+
+	.military-bkgd {
+  background: url(images/military-large.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	header {
+	position: relative;
+		width: 100%;
+	    height: 100%; 
+	}
+	
+	.nav.navbar-nav{
+		padding: 40px 20px;
+	}
+}
+
+@media only screen and (max-width:980px){
+	.navbar {
+		height:55px;
+	}
+	
+	.nav.navbar-nav {
+		padding: 15px 20px;	
+	}
+	
+	.commercial-bkgd {
+  background: url(images/commercial-medium.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	
+	.military-bkgd {
+  background: url(images/military-medium.jpg) no-repeat center center;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	header {
+		position: relative;
+	}
+}
+
+@media only screen and (max-width:537px){
+	.commercial-bkgd {
+  background: url(images/commercial-small.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	
+	.military-bkgd {
+  background: url(images/military-small.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	header {
+		position: relative;
+	}
+	
+	
+}
+
+
+@media only screen and (max-width:767px){
+	.navbar-collapse {
+			background: #ed1d24;
+		}
+		
+		#military .navbar-collapse {
+			background: #747e5c;
+		}
+}
+
+/* Need header images for each break to increase loading time on mobile devices*/
+.header_bg {
+	position: absolute;
+}
+
+nav {
+	background:;
+	position: relative;
+	background: url(images/header_inner_bg.png) #ed1d24 no-repeat right
+		bottom;
+}
+
+.nav_inner {
+	position: relative;
+	top: 0;
+	height: 100px;
+}
+
+
+.nav.navbar-nav li a {
+	color: white;
+	font-size: 1.125em;
+	text-transform: capitalize;
+}
+
+ul.red_nav>li a:hover {
+	color: black;
+	opacity: 0.4;
+}
+
+nav ul ul.dropdown-menu {
+	background: #ed1d24; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	
+nav ul ul.dropdown-menu li {
+	float: none; 
+	position: relative;
+}
+
+nav ul ul.dropdown-menu li a {
+	margin:10px;
+	color: #fff;
+	background: #ed1d24;
+	
+	border-bottom:1px solid white;
+}	
+
+nav ul ul.dropdown-menu li a:hover {
+	background:rgb(106,44,47);
+}
+
+nav ul li:first-child:hover ul.dropdown-menu {
+	background: #ed1d24; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	
+nav ul li:first-child:hover ul.dropdown-menu li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+
+nav ul li:first-child:hover ul.dropdown-menu li a {
+	background: url(images/title_image_wmask.png);
+	padding: 45px 45px;
+	margin:10px;
+	color: #fff;
+	border:none;
+}	
+
+nav ul li:first-child:hover ul.dropdown-menu li:nth-child(2) a {
+	background: url(images/menu_commercial_RT022_static.png);
+}
+
+nav ul li:first-child:hover ul.dropdown-menu li:nth-child(3) a {
+	background: url(http://www.webtegstage.com/kalmar/wp-content/uploads/2013/12/menu_accessories_over.gif);
+}
+
+
+nav ul li:first-child:hover ul.dropdown-menu li a:hover {
+	background: url(images/title_image.png);
+}
+nav ul li:first-child:hover ul.dropdown-menu li:nth-child(2) a:hover {
+	background: url(images/menu_commercial_RT022.png);
+}
+
+
+nav ul li:first-child:hover ul.dropdown-menu li:nth-child(3) a:hover {
+	background: url(http://www.webtegstage.com/kalmar/wp-content/uploads/2013/12/menu_accessories.gif);
+}
+
+nav ul li:first-child:hover ul.dropdown-menu {
+	display:inline-flex;
+}
+
+nav ul li:hover ul.dropdown-menu {
+	display:inline-block;
+}
+ #######
+ 
+nav#military ul ul.dropdown-menu{
+	background: #747e5c; 
+	border-radius: 0; 
+	padding: 0;
+	position: absolute; top: 100%;
+	
+}
+	
+nav#military ul ul.dropdown-menu li {
+	float: none; 
+	position: relative;
+}
+
+nav#military ul ul.dropdown-menu li a {
+	margin:10px;
+	color: #fff;
+	background: #747e5c;
+	
+	border-bottom:1px solid white;
+}	
+
+nav#military ul ul.dropdown-menu li a:hover {
+	background:rgba(51, 51, 51, 0.7);
+}
+
+nav#military ul li:first-child:hover ul.dropdown-menu {
+	background: #747e5c; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	
+nav#military ul li:first-child:hover ul.dropdown-menu li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+
+nav#military ul li:first-child:hover ul.dropdown-menu li a {
+	background: url(images/menu_military_rt240_static.png);
+	padding: 45px 45px;
+	margin:10px;
+	color: #fff;
+	border:none;
+}	
+
+nav#military ul li:first-child:hover ul.dropdown-menu li:nth-child(2) a {
+	background: url(images/menu_military_rt022_static.png)no-repeat;
+}
+
+nav#military ul li:first-child:hover ul.dropdown-menu li:nth-child(3) a {
+	background: url(http://www.webtegstage.com/kalmar/wp-content/uploads/2013/12/menu_accessories_military_over.gif) no-repeat;
+}	
+
+nav#military ul li:first-child:hover ul.dropdown-menu li a:hover {
+	background: url(images/menu_military_rt240.png)no-repeat;
+}
+
+nav#military ul li:first-child:hover ul.dropdown-menu li:nth-child(2) a:hover {
+	background: url(images/menu_military_rt022.png)no-repeat;
+}
+
+nav#military ul li:first-child:hover ul.dropdown-menu li:nth-child(3) a:hover {
+	background: url(http://www.webtegstage.com/kalmar/wp-content/uploads/2013/12/menu_accessories_military.gif) no-repeat;
+}
+
+nav#military ul li:first-child:hover ul.dropdown-menu {
+	display:inline-flex;
+	background: #747e5c;
+}
+
+nav#military ul li:hover ul.dropdown-menu {
+	display:inline-block;
+	background: #747e5c;
+}
+
+div.tan_nav {
+	background:url(images/tan_tab.png);
+	position:relative;
+}
+
+ul.tan_nav {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+	background:#dbd4c2;
+	height:31px;
+	position:relative;
+	left:31px;
+	margin-right:31px;
+	padding-right:25px;
+}
+ul.tan_nav>li {
+	display:inline;
+}
+
+ul.tan_nav li > a {
+	color: black;
+	font-size: .750em;
+	text-transform: capitalize;
+	padding: 0 5px;
+	background:#dbd4c2;
+	border-right:1px solid black;
+}
+
+ul.tan_nav li > a:hover {
+	color:white;
+}
+
+ul.tan_nav li:last-child > a {
+	border:none;
+}
+
+nav#military {
+	background: url(images/mil_nav.png) #747e5c no-repeat right bottom;
+}
+
+.navbar {
+	background: url(images/header_inner_bg.png) #ed1d24 no-repeat right
+		bottom;
+}
+
+.navbar-default {
+	border: none;
+}
+
+.navbar-toggle {
+	position: relative;
+	left: 50%;
+	margin-top: 15px;
+	margin-left:-68px;
+	float: none;
+	border: none;
+}
+
+.navbar-toggle p {
+	margin-top: -3px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	font-size: 1.125em;
+}
+
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus
+	{
+	background-color: transparent;
+}
+
+.panel-default>.panel-heading{
+	background-color:rgb(141,129,110);
+	background-image:none;
+}
+.panel {
+	border:none;
+}
+
+.panel-group .panel{
+	border-radius:0;
+}
+
+.panel-body{
+	padding: 15px 20px;
+}
+
+.panel h4 {
+	color:white;
+}
+
+.red_box{
+	background:#ed1d24;
+	margin-bottom:20px;
+}
+
+.red_box ul {
+	padding:20px;
+	list-style: none;
+}
+
+.red_box ul li {
+	padding-top:10px;
+	font-size:1.75em;
+	color:white;
+	border-bottom:1px solid white;
+	
+}
+
+.red_box ul li a {
+	text-transform:uppercase;
+	font-weight:1000;
+	color:white;
+}
+
+.red_box ul li a:hover {
+	color:rgba(255,255,255,0.6);
+}
+
+.green_box{
+	background:#747e5c;
+	margin-bottom:20px;
+}
+
+.green_box ul {
+	padding:20px;
+	list-style: none;
+}
+
+.green_box ul li {
+	padding-top:10px;
+	font-size:1.75em;
+	color:white;
+	border-bottom:1px solid white;
+	
+}
+
+.green_box ul li a {
+	text-transform:uppercase;
+	font-weight:1000;
+	color:white;
+}
+
+.green_box ul li a:hover {
+	color:rgba(255,255,255,0.6);
+}
+
+.black_box{
+	padding:20px;
+	background:black;
+	text-align:center;
+	color: #fff;
+}
+
+.black_box p{
+	color:#dbd4c2;
+	margin:10px 0;
+}
+
+.black_box h2{
+	color: white;
+	font-size:1.750em;
+}
+
+.black_box h1{
+	color: #dbd4c2;	
+	font-size:1.75em;
+	margin:10px 0;
+}	
+
+.slider {
+	height: 360px;
+	margin-bottom:15px;
+}
+
+/* 6. Content
+-------------------------------------------------------------------------------*/
+.featured {
+	background: #c71a21;
+	min-height: 400px;
+}
+
+.featured.military {
+	background: #474d3f;
+}
+
+
+.featured_area{
+	padding:70px 5px 40px 5px;
+}
+
+.featured_text h2{
+	color:#333333;
+	font-size:1.625em;
+}
+
+.featured_text p{
+	line-height:200%;
+	color:white;
+	font-size:.813em;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page_header {
+	height:38px;
+	width:320px;
+	background: url(images/white_tab.png) no-repeat;
+	padding:0 50px;
+	font-size:1.250em;
+	font-weight:500;
+}
+
+.page_header_inner {
+	
+}
+
+.content_area {
+	background: url(images/ricepaper.png) repeat;
+	min-height: 500px;
+	padding: 20px 0;
+}
+
+.underlined_page_header {
+	border-bottom: 1px solid black;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	font-size: 2.25em;
+}
+
+.modal-dialog {
+	width:980px;
+}
+
+.newsSpacer {
+	height: 60px;
+	background: rgba(61, 58, 52, 0.4);
+	font-size:1.500em;
+	color:white;
+	text-align:center;
+	padding:10px 0;
+}
+
+.newsArticle {
+	background:white;
+	border-radius:10px;
+	margin:15px;
+	padding:0 15px;
+}
+
+.newsArticle h1{
+	font-weight:900;
+	color:red;
+	font-size:2.00em;
+	border-bottom:1px solid #b3a996;
+}
+
+.newsArticle p {
+	font-size:1.063em;
+	color:black;	
+}
+
+.newsContainer{
+	background: rgba(61, 58, 52, 0.4); 
+	height: auto;
+	padding:10px 0;
+	margin:10px 0;
+}
+
+.newsEvents {
+	margin: 20px 0;
+}
+
+.panel-body a{
+	color: blue;
+	text-decoration:underline;
+}
+.panel-body a.btn{
+	color:white;
+	text-decoration:none;
+}
+
+.panel-body h1 {
+	margin-left: 20px;
+}
+
+.panel-body a:hover img {
+	position:relative;
+	top: 6px;
+}
+/* 7. Footer
+-------------------------------------------------------------------------------*/
+footer {
+	background:#ed1d24;
+	min-height:260px;
+	padding-top:20px;
+}
+
+footer.military {
+	background:#747e5c;
+}
+
+footer h1 {
+	color: #000;
+	font-size: 1.2em;
+}
+
+footer a {
+	color: #ffffff;
+	font-size: .8em;
+}
+
+footer a:hover {
+	color: #000;
+	font-size: .8em;
+}
+
+footer ul, footer li {
+	list-style: none;
+}
+
+footer ul {
+	margin-left: 0px !important;
+}
+
+.copyright-area {
+	background:#000;
+	height:35px;
+	text-align:center;
+	text-transform:capitalize;
+	color:#fff;
+	padding:5px 0;
+	font-size: .7em;
+}
+
+.copyright-area a{
+	color: #ffffff;
+}
+
+.copyright-area a:hover {
+	color: #ED1D24;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
